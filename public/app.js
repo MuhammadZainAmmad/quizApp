@@ -1,12 +1,12 @@
-function getQues(){
-    firebase.database().ref("Ques1").once('value',function(data) {
-        console.log(data.val())
-    })
-}
-var a = getQues()
+// function getQues(){
+//     firebase.database().ref("Ques1").once('value',function(data) {
+//         console.log(data.val())
+//     })
+// }
+// var a = getQues()
 
 var questions = [
-    a,
+    // a,
     {
         question: " HTML stand for ______",
         option: ['HyperText Markup Language', 'abc', 'HyperText Markup Language', 'HyperText MAkeup Language'],
@@ -39,7 +39,7 @@ var questions = [
     }
 
 ]
-console.log(questions[0])
+// console.log(questions[0])
 
 
 
@@ -125,6 +125,6 @@ function submit(){
     alert(`Your score is: ${score}`)
 }
 
-var interval = setInterval(displayQuestion,5000)
+// var interval = setInterval(displayQuestion,5000)
 // clearInterval(interval)
 // displayQuestion()
